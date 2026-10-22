@@ -6,16 +6,6 @@ Prime Time – настольное WPF-приложение для центра
 
 Скриншоты хранятся в папке `docs/screenshots/`.
 
-| Страница | Файл |
-|---|---|
-| Главная | `docs/screenshots/home.png` |
-| Вход | `docs/screenshots/login.png` |
-| Регистрация | `docs/screenshots/register.png` |
-| Каталог услуг | `docs/screenshots/catalog.png` |
-| Оформление заявки | `docs/screenshots/order.png` |
-| Список заявок | `docs/screenshots/orders.png` |
-| Редактирование заявки | `docs/screenshots/edit-order.png` |
-
 ![Главная](docs/screenshots/home.png)
 
 ![Каталог услуг](docs/screenshots/catalog.png)
