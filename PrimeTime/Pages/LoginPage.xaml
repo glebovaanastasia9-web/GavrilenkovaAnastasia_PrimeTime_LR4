@@ -1,0 +1,30 @@
+﻿<Page x:Class="PrimeTime.Pages.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PrimeTime.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="800"     
+      Title="Авторизация" Background="{StaticResource BgBrush}">
+    <Grid>
+        <Border Style="{StaticResource PTCardBorder}" Width="380" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+                    <Ellipse Width="10" Height="10" Fill="{StaticResource PinkStrongBrush}" Margin="3"></Ellipse>
+                    <Ellipse Width="10" Height="10" Fill="{StaticResource PeachStrongBrush}" Margin="3"></Ellipse>
+                    <Ellipse Width="10" Height="10" Fill="{StaticResource YellowStrongBrush}" Margin="3"></Ellipse>
+                    <Ellipse Width="10" Height="10" Fill="{StaticResource GreenStrongBrush}" Margin="3"></Ellipse>
+                    <Ellipse Width="10" Height="10" Fill="{StaticResource BlueStrongBrush}" Margin="3"></Ellipse>
+                </StackPanel>
+                <TextBlock Text="Вход в Prime Time" FontSize="24" FontWeight="Bold" Foreground="{StaticResource TextBrush}" HorizontalAlignment="Center" Margin="0,0,0,20"></TextBlock>
+                <TextBlock Text="Логин:" Style="{StaticResource PTLabel}"></TextBlock>
+                <TextBox x:Name="txtLogin" Style="{StaticResource PTTextBox}" MaxLength="50"></TextBox>
+                <TextBlock Text="Пароль:" Style="{StaticResource PTLabel}"></TextBlock>
+                <PasswordBox x:Name="pbPassword" Style="{StaticResource PTPasswordBox}" MaxLength="50"></PasswordBox>
+                <Button Content="Войти" Style="{StaticResource PTPrimaryButton}" IsDefault="True" Click="BtnLogin_Click"></Button>
+                <Button Content="Создать личный кабинет" Style="{StaticResource PTLinkButton}" Click="BtnGoToReg_Click"></Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Page>

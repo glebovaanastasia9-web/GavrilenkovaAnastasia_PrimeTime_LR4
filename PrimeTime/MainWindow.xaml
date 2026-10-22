@@ -1,0 +1,43 @@
+﻿<Window x:Class="PrimeTime.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PrimeTime"
+        mc:Ignorable="d"
+        Title="Prime Time | центр организации праздников" Height="700" Width="1100"
+        WindowStartupLocation="CenterScreen" Background="{StaticResource BgBrush}"
+        MinWidth="900" MinHeight="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0">
+            <Border Height="6" Background="{StaticResource FestiveBrush}"></Border>
+            <Border Background="White" BorderBrush="{StaticResource LineBrush}" BorderThickness="0,0,0,1" Padding="15,8,15,8">
+                <DockPanel>
+                    <Border Background="{StaticResource PinkBrush}" CornerRadius="10" Padding="12,4,12,4" VerticalAlignment="Center" DockPanel.Dock="Left">
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Prime Time" Foreground="#C0688A" FontSize="20" FontWeight="Bold" VerticalAlignment="Center"></TextBlock>
+                            <TextBlock Text=" | праздники" Foreground="{StaticResource TextBrush}" FontSize="13" VerticalAlignment="Center" Margin="4,0,0,0"></TextBlock>
+                        </StackPanel>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" VerticalAlignment="Center">
+                        <TextBlock x:Name="txtUser" Text="Гость" Foreground="{StaticResource MutedBrush}" FontSize="13" VerticalAlignment="Center" Margin="0,0,12,0"></TextBlock>
+                        <Button x:Name="BtnLogout" Content="Выйти" Style="{StaticResource PTPrimaryButton}" Width="90" Height="32" Margin="0" Click="BtnLogout_Click"></Button>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Button x:Name="BtnHome" Content="Главная" Style="{StaticResource PTMenuButton}" Click="BtnHome_Click"></Button>
+                        <Button x:Name="BtnCatalog" Content="Каталог услуг" Style="{StaticResource PTMenuButton}" Click="BtnCatalog_Click"></Button>
+                        <Button x:Name="BtnOrder" Content="Оформить заявку" Style="{StaticResource PTMenuButton}" Click="BtnOrder_Click"></Button>
+                        <Button x:Name="BtnOrders" Content="Мои заявки" Style="{StaticResource PTMenuButton}" Click="BtnOrders_Click"></Button>
+                        <Button x:Name="BtnLogin" Content="Вход" Style="{StaticResource PTMenuButton}" Click="BtnLogin_Click"></Button>
+                        <Button x:Name="BtnRegister" Content="Регистрация" Style="{StaticResource PTMenuButton}" Click="BtnRegister_Click"></Button>
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+        </StackPanel>
+        <Frame x:Name="MainFrame" Grid.Row="1" NavigationUIVisibility="Hidden" Navigated="MainFrame_Navigated"></Frame>
+    </Grid>
+</Window>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="53d76bc6817e4c83905fe3d3cb96e115" Name="Diagram1" ZoomLevel="55">
+        <EntityTypeShape EntityType="PrimeTimeModel.Clients" Width="1.5" PointX="0.75" PointY="8.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Equipment" Width="1.5" PointX="3" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.EventEquipment" Width="1.5" PointX="5.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Events" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.EventServices" Width="1.5" PointX="5.25" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.EventStaff" Width="1.5" PointX="8.25" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.EventTypes" Width="1.5" PointX="0.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.PaymentMethods" Width="1.5" PointX="6" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Payments" Width="1.5" PointX="8.25" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Positions" Width="1.5" PointX="3.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Reviews" Width="1.5" PointX="5.25" PointY="21.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Roles" Width="1.5" PointX="3.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Services" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Staff" Width="1.5" PointX="6" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Users" Width="1.5" PointX="6" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="PrimeTimeModel.Venues" Width="1.5" PointX="0.75" PointY="13.375" IsExpanded="true" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Events_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Users_Clients" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_EventEquipment_Equipment" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_EventEquipment_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Events_EventTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Events_Venues" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_EventServices_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_EventStaff_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Payments_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Reviews_Events" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_EventServices_Services" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_EventStaff_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Payments_PaymentMethods" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Staff_Positions" ManuallyRouted="false" />
+        <AssociationConnector Association="PrimeTimeModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
